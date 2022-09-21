@@ -1,4 +1,4 @@
---[[ athena ui lib
+--[[ athena ui lib (credit to gfxti this is just because my mac is shit)
 	i dont think they exist anymore idk
 	made just for memories
 ]]
@@ -136,7 +136,7 @@ function ret:Library(Name)
 	end
 	
 	uis.InputBegan:Connect(function(m3,m2)
-		if m3.KeyCode == Enum.KeyCode.RightControl and not m2 then
+		if m3.KeyCode == Enum.KeyCode.M and not m2 then
 			settings.vis = not settings.vis
 			for i,v in pairs(aui:GetChildren()) do
 				if v.Name:find("Window") then
